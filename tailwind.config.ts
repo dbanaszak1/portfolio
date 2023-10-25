@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
-        'text-slide': 'text-slide 6s  infinite linear',
+        'text-slide': 'text-slide 12s  infinite linear',
       },
       keyframes: {
         'text-slide': {
@@ -17,7 +17,7 @@ const config: Config = {
                 transform: 'translateX(10%)',
             },
             '100%': {
-                transform: 'translateX(-110%)',
+                transform: 'translateX(-125%)',
             },
         },                    
       },
