@@ -8,10 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      animation: {
+        'text-slide': 'text-slide 6s  infinite linear',
+      },
+      keyframes: {
+        'text-slide': {
+            '0%': {
+                transform: 'translateX(10%)',
+            },
+            '100%': {
+                transform: 'translateX(-110%)',
+            },
+        },                    
+      },
+      fontFamily: {
+        body: ['Sedgwick Ave Display'],
+        alkatra: ['Alkatra']
       },
     },
   },
