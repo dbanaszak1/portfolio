@@ -9,7 +9,7 @@ const TopComponent = () => {
             IT STUDENT, FUTURE WEB DEV WITH MANY IDEAS
       </div>
       <div style={{backgroundImage: `url(https://github.com/dbanaszak1/portfolio/blob/main/images/profile.png?raw=true)`}}  
-            className='m-auto translate-y-60 h-[600px] w-[600px] bg-cover z-20'></div>
+            className='m-auto translate-y-[198px] h-[600px] w-[600px] bg-cover z-20'></div>
     </div>
   )
 }
