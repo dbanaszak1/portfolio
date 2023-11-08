@@ -1,6 +1,8 @@
 import React from 'react'
 import FlipCard from './FlipCard'
 import Carousel from './Carousel'
+import Projects from './Projects'
+
 
 const Exp = () => {
 
@@ -25,6 +27,15 @@ const Exp = () => {
         },
     ]
 
+    const projects = [
+        {
+            name:"SkyTravel",
+            url:"https://dbanaszak1.github.io/vite-deploy/home",
+            logo:"https://github.com/dbanaszak1/vite-deploy/blob/main/public/images/logo-no-background.png?raw=true",
+            screenshots:["",""]
+        },
+    ]
+
   return (
     <div className='my-20 '>
         <h1 className='text-5xl text-white font-alkatra text-center py-8'>What I can possibly do for you?</h1>
@@ -33,6 +44,8 @@ const Exp = () => {
         </div>
         <h1 className='text-5xl text-white font-alkatra text-center pt-28 pb-16'>Technologies that I have some experience in:</h1>
         <Carousel/>
+        <h1 className='text-5xl text-white font-alkatra text-center pt-28 pb-16'>Projects:</h1>
+        <Projects project={projects}/>
     </div>
   )
 }

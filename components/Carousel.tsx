@@ -28,14 +28,7 @@ const Carousel = () => {
     },
   ]
 
-
-
   const [mainIndex, setMainIndex] = useState(20)
-
-
-
-
-
 
   useEffect(() => {
     const chevronR = document.getElementById("chevronRight");
@@ -96,19 +89,19 @@ const Carousel = () => {
         </div>
 
 
-        <div style={{backgroundImage: `url(${skills[(mainIndex)%5].bg})`}} id="leftout" className='w-64 h-64 shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] bg-gray-700 m-6 rounded-md skew-y-[24deg] translate-y-[-120px] opacity-0 bg-cover'>
+        <div style={{backgroundImage: `url(${skills[(mainIndex)%5].bg})`}} id="leftout" className='carousel skew-y-[24deg] translate-y-[-120px] opacity-0'>
         
         </div>
-        <div style={{backgroundImage: `url(${skills[(mainIndex+1)%5].bg})`}} id="div1" className='w-64 h-64 shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] bg-gray-700 m-6 rounded-md skew-y-[12deg] translate-y-[-30px] bg-cover'>
+        <div style={{backgroundImage: `url(${skills[(mainIndex+1)%5].bg})`}} id="div1" className='carousel skew-y-[12deg] translate-y-[-30px]'>
         
         </div>
-        <div style={{backgroundImage: `url(${skills[(mainIndex+2)%5].bg})`}} id="div2" className='w-64 h-64 shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] bg-gray-700 m-6 rounded-md bg-cover'>
+        <div style={{backgroundImage: `url(${skills[(mainIndex+2)%5].bg})`}} id="div2" className='carousel'>
         
         </div>
-        <div style={{backgroundImage: `url(${skills[(mainIndex+3)%5].bg})`}} id="div3" className='w-64 h-64 shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] bg-gray-700 m-6 rounded-md -skew-y-[12deg] translate-y-[-30px] bg-cover'>
+        <div style={{backgroundImage: `url(${skills[(mainIndex+3)%5].bg})`}} id="div3" className='carousel -skew-y-[12deg] translate-y-[-30px]'>
         
         </div>
-        <div style={{backgroundImage: `url(${skills[(mainIndex+4)%5].bg})`}} id="rightout" className='w-64 h-64 shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] bg-gray-700 m-6 rounded-md -skew-y-[24deg] translate-y-[-120px] opacity-0 bg-cover'>
+        <div style={{backgroundImage: `url(${skills[(mainIndex+4)%5].bg})`}} id="rightout" className='carousel -skew-y-[24deg] translate-y-[-120px] opacity-0'>
         
         </div>
 

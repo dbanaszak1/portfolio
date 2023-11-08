@@ -6,6 +6,7 @@ import Image from 'next/image'
 
 export default function Home() {
 
+
   return (
     <main className="overflow-hidden bg-gray-800">
       <NavBar/>
