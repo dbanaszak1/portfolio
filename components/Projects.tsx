@@ -12,8 +12,8 @@ interface props{
 const Projects = ({project}:props) => {
   return (
     project.map((project,index)=>(
-        <div key={index} className='flex  place-content-evenly lg:px-10'>
-            <div className='flex-wrap m-auto border-[1px] border-white text-white font-alkatra flex shadow-2xl rounded-2xl p-6 items-center relative'>
+        <div key={index} className='flex  place-content-evenly lg:px-10 '>
+            <div className='bg-gray-800 flex-wrap m-auto border-[1px] border-white text-white font-alkatra flex shadow-2xl rounded-2xl p-6 items-center relative'>
                 <div className='m-auto mx-12 justify-center'><div className='w-32 h-32  bg-cover ' style={{backgroundImage: `url(${project.logo})`}}></div></div>
                 <div className='text-3xl py-4 px-12 flex m-auto items-center h-full'>{project.name}</div>
                 <div className='text-lg px-10'>

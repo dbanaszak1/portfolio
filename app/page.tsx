@@ -8,7 +8,7 @@ export default function Home() {
 
 
   return (
-    <main className="overflow-hidden bg-gray-800">
+    <main className="overflow-hidden bg-gray-800" style={{backgroundImage:`url()`}}>
       <NavBar/>
       <TopComponent/>
       <Exp/>
