@@ -28,7 +28,7 @@ const Carousel = () => {
       color: "from-blue-200 to-purple-600"
     },    
     {
-      bg: "https://static-00.iconduck.com/assets.00/brand-nextjs-icon-256x256-zm2coebd.png",
+      bg: "https://github.com/dbanaszak1/portfolio/blob/main/images/nextlogo.png?raw=true",
       info: "NextJS",
       color: "from-white to-white"
     },

@@ -32,7 +32,10 @@ const Exp = () => {
             name:"SkyTravel",
             url:"https://dbanaszak1.github.io/vite-deploy/home",
             logo:"https://github.com/dbanaszak1/vite-deploy/blob/main/public/images/logo-no-background.png?raw=true",
-            screenshots:["",""]
+            screenshots:["",
+                        "",
+                        "",
+                        ""]
         },
     ]
 
@@ -44,11 +47,11 @@ const Exp = () => {
         </div>
         <div className='pb-6 lg:pb-20'>
             <div className='border-gray-400 border-t-[1px] w-5/6 m-auto'></div>
-            <h1 className='text-2xl lg:text-5xl text-white font-alkatra w-5/6 m-auto pt-10 lg:pt-28 pb-16'>Technologies that I have some experience in:</h1>            
+            <h1 className='text-2xl lg:text-5xl text-white font-alkatra w-5/6 m-auto pt-10  pb-10'>Technologies that I have some experience in:</h1>            
             <Carousel/>      
         </div>
         <div className='border-t-[1px] border-gray-400 w-5/6 m-auto'>
-            <h1 className='text-2xl lg:text-5xl text-white font-alkatra pt-20 pb-16'>Projects:</h1>
+            <h1 className='text-2xl lg:text-5xl text-white font-alkatra pt-10 pb-10'>Projects:</h1>
             <Projects project={projects}/>            
         </div>
 
