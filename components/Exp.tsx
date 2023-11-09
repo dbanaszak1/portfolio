@@ -37,18 +37,18 @@ const Exp = () => {
     ]
 
   return (
-    <div className='my-20 '>
-        <div className='lg:w-5/6 2xl:w-2/3 m-auto flex flex-wrap place-content-evenly pb-20'>
-            <h1 className='text-5xl text-white font-alkatra text-center py-8 w-full'>What I can possibly do for you?</h1>            
-            <FlipCard cards={expCards}/> 
+    <div className=' m-auto'>
+        <div className='lg:w-5/6 2xl:w-5/6 m-auto flex flex-wrap place-content-evenly pb-10 lg:pb-20 '>
+            <h1 className='text-2xl lg:text-5xl text-white font-alkatra py-8 w-5/6 lg:w-full'>What I can possibly do for you?</h1>            
+            <FlipCard cards={expCards}/>
         </div>
-        <div className='pb-20'>
+        <div className='pb-6 lg:pb-20'>
             <div className='border-gray-400 border-t-[1px] w-5/6 m-auto'></div>
-            <h1 className='text-5xl text-white font-alkatra text-center pt-28 pb-16'>Technologies that I have some experience in:</h1>            
-            <Carousel/>           
+            <h1 className='text-2xl lg:text-5xl text-white font-alkatra w-5/6 m-auto pt-10 lg:pt-28 pb-16'>Technologies that I have some experience in:</h1>            
+            <Carousel/>      
         </div>
         <div className='border-t-[1px] border-gray-400 w-5/6 m-auto'>
-            <h1 className='text-5xl text-white font-alkatra text-center pt-20 pb-16'>Projects:</h1>
+            <h1 className='text-2xl lg:text-5xl text-white font-alkatra pt-20 pb-16'>Projects:</h1>
             <Projects project={projects}/>            
         </div>
 
