@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutMe = () => {
   return (
-  <div className='w-5/6 m-auto relative pt-16'>
+  <div className='w-5/6 m-auto relative pt-16 max-w-[940px]'>
     <div className='flex items-center text-sm font-alkatra text-white'>
       <div className='animate-pulse bg-green-600 w-2 h-2 rounded-full mx-2 -translate-y-[2px]'></div>
       <span>Online.</span>
