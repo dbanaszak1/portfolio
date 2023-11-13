@@ -1,8 +1,17 @@
 import React from 'react'
+import { useEffect, useRef } from 'react'
+import { useTransform, useScroll, motion} from 'framer-motion'
 
 const AboutMe = () => {
+
+  const container = useRef(null);
+  const {scrollYProgress} = useScroll({
+    target: container,
+    offset: ['0 2', '1.33 1']
+  })
+
   return (
-  <div className='w-5/6 m-auto relative pt-16 max-w-[940px]'>
+  <motion.div ref={container} style={{scale: scrollYProgress, opacity: scrollYProgress}} className='w-5/6 m-auto relative pt-16 max-w-[940px] border-b-[1px] border-gray-300 pb-6'>
     <div className='flex items-center text-sm font-alkatra text-white'>
       <div className='animate-pulse bg-green-600 w-2 h-2 rounded-full mx-2 -translate-y-[2px]'></div>
       <span>Online.</span>
@@ -41,7 +50,7 @@ const AboutMe = () => {
       </button>    
     </div>  
 
-  </div>
+  </motion.div>
   )
 }
 

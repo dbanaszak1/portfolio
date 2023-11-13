@@ -5,7 +5,7 @@ const NavBar = () => {
     <nav className='absolute w-5/6 right-0 top-10 h-20 rounded-l-full bg-white z-50 inline-flex items-center border-[1px] border-black'>
       <div className='inline-flex md:w-1/2 md:px-10 items-center'>
         <div className='h-16 w-24 bg-cover mx-10' style={{backgroundImage: `url(https://github.com/dbanaszak1/portfolio/blob/main/images/devb-high-resolution-logo-black-transparent.png?raw=true)`}}></div>
-        <div className='text-sm md:text-xl w-24 md:w-80'>Creative mind for design</div>        
+        <div className='text-sm md:text-xl w-24 md:w-80'>Dominik Banaszak</div>        
       </div>
       <div className='text-2xl md:w-1/2 text-end px-2 md:px-10'>
         <div className='inline-flex'>

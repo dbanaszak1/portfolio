@@ -19,5 +19,15 @@
     .bgcolor{
         @apply bg-[#1a1c1f] hover:bg-[#181a1c]
     }
-
+    .progress-bar {
+        @apply 
+        fixed
+        top-20
+        w-[2px]
+        left-16
+        bottom-0
+        bg-white
+        transform
+        origin-top
+      }
 }

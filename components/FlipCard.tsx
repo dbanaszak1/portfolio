@@ -1,4 +1,6 @@
 import React from 'react'
+import { useRef } from 'react'
+import { useScroll, motion} from 'framer-motion'
 
 interface props{
     cards: {
@@ -10,9 +12,19 @@ interface props{
 }
 const FlipCard = ({cards}:props) => {
     
+    const container = useRef(null);
+    const {scrollYProgress} = useScroll({
+      target: container,
+      offset: ['0 2', '0.9 1']
+    })
+  
+
   return (
+    <motion.div style={{opacity:scrollYProgress, scale: scrollYProgress }} className='lg:w-5/6 py-10 m-auto flex flex-wrap place-content-evenly border-b-[1px] border-white max-w-[940px]' ref={container}>
+    <h1  className='text-2xl lg:text-4xl text-white font-alkatra text-center md:text-left pb-2 w-full'>What I can possibly do for you?</h1>   
+    {
     cards.map((cards, index)=>(
-        <div key={index} className="flex  items-center justify-center py-6">
+        <div  key={index} className="flex  items-center justify-center py-2">
             <div className="group h-72 w-60 [perspective:1000px]">
                 <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                 <div className="absolute inset-0">
@@ -30,7 +42,8 @@ const FlipCard = ({cards}:props) => {
                 </div>
             </div>
         </div>        
-    ))
+    ))}
+  </motion.div>
   )
 }
 
