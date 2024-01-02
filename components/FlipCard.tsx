@@ -20,7 +20,7 @@ const FlipCard = ({cards}:props) => {
   
 
   return (
-    <motion.div style={{opacity:scrollYProgress, scale: scrollYProgress }} className='lg:w-5/6 py-10 m-auto flex flex-wrap place-content-evenly border-b-[1px] border-white max-w-[940px]' ref={container}>
+    <motion.div style={{opacity:scrollYProgress, scale: scrollYProgress }} className='lg:w-5/6 py-10 m-auto flex flex-wrap place-content-evenly border-b-[1px] border-gray-300 max-w-[940px]' ref={container}>
     <h1  className='text-2xl lg:text-4xl text-white font-alkatra text-center md:text-left pb-2 w-full'>What I can possibly do for you?</h1>   
     {
     cards.map((cards, index)=>(

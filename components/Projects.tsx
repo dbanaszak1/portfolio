@@ -22,11 +22,11 @@ const Projects = ({project}:props) => {
     const container = useRef(null);
     const {scrollYProgress} = useScroll({
       target: container,
-      offset: ['0 2', '1.1 1']
+      offset: ['0 3', '1.1 1']
     })
 
   return (
-    <motion.div ref={container} style={{scale: scrollYProgress, opacity: scrollYProgress}}>{
+    <motion.div ref={container} style={{scale: scrollYProgress, opacity: scrollYProgress}} className='border-b-[1px] border-gray-300 pb-8'>{
         project.map((project,index)=>(
             <div key={index} className='flex place-content-evenly mb-6'>
                 <div className='bgcolor lg:w-[900px] flex-wrap m-auto text-white font-alkatra flex shadow-2xl rounded-2xl p-6 items-center relative'>
@@ -55,7 +55,7 @@ const Projects = ({project}:props) => {
                                         <span>{project.text[1]}</span>
                                         {svg}
                                     </div>
-                                    <img className='border-[1px] border-black absolute top-0 translate-x-64 invisible group-hover:visible' src={project.screenshots[1]}/>
+                                    <img className='border-[1px] border-black absolute top-0 translate-x-64 invisible lg:group-hover:visible' src={project.screenshots[1]}/>
                                 </li>
                                 <li className='group'>
                                     <div className='inline-flex'>
@@ -69,7 +69,7 @@ const Projects = ({project}:props) => {
                                         <span>{project.text[3]}</span>
                                         {svg}
                                     </div>
-                                    <img className='border-[1px] border-black absolute top-0 translate-x-64 invisible group-hover:visible' src={project.screenshots[3]}/>
+                                    <img className='border-[1px] border-black absolute top-0 translate-x-64 invisible lg:group-hover:visible' src={project.screenshots[3]}/>
                                 </li>
                             </ul>                    
                         </div>    

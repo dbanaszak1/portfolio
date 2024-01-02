@@ -95,7 +95,7 @@ const Carousel = () => {
     <motion.div ref={container} style={{scale: scrollYProgress, opacity: scrollYProgress}}>
       <h1 className='text-2xl lg:text-4xl text-white font-alkatra w-5/6 m-auto pt-10 pb-10 max-w-[940px]'>Technologies that I have some experience in:</h1>     
       <div className='block xl:hidden'><SmallSlider slides={skills}/></div>
-      <div className='w-[1600px] m-auto items-center pt-6 hidden xl:block lg:-translate-x-[150px] 2xl:-translate-x-[40px]'>
+      <div className='w-[1600px] m-auto items-center pt-6 hidden xl:block lg:-translate-x-[150px] 2xl:-translate-x-[0px]'>
         <div className={`w-full text-center text-4xl font-alkatra bg-clip-text bg-gradient-to-r ${skills[(mainIndex+2)%5].color} text-transparent`}>{skills[(mainIndex+2)%5].info}</div>
         <div  className='flex justify-center items-center relative '>
           <div id="chevronLeft" className='text-white skew-y-[24deg] absolute top-[60px] left-[300px] cursor-pointer'>

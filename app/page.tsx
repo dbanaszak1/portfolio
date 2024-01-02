@@ -5,6 +5,7 @@ import NavBar from '@/components/NavBar'
 import TopComponent from '@/components/TopComponent'
 import { useRef } from 'react'
 import { useTransform, useScroll, motion, useSpring} from 'framer-motion'
+import Contact from '@/components/Contact';
 
 
 
@@ -30,6 +31,7 @@ export default function Home() {
       <section>
         <AboutMe/>
         <Exp/>
+        <Contact/>
       </section>
     </main>
   )
