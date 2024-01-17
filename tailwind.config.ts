@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
-        'text-slide': 'text-slide 12s  infinite linear',
+        'text-slide': 'text-slide 20s infinite linear',
+        'text-slide2': 'text-slide2 20s infinite linear',
         'carousel3-2': 'slide3-2 2s ease-out',
         'carousel2-1': 'slide2-1 2s ease-out',
         'carousel1-out': 'slide1-out 2s ease-out',
@@ -24,12 +25,24 @@ const config: Config = {
             '0%': {
                 transform: 'translateX(10%)',
             },
-            '100%': {
-                transform: 'translateX(-125%)',
-            },
+            '58%': {
+              transform: 'translateX(-125%)',
           },
-          
-
+            '100%': {
+              transform: 'translateX(-125%)',
+          },
+          },
+          'text-slide2': {
+            '0%': {
+                transform: 'translateX(10%)',
+            },
+            '42%': {
+              transform: 'translateX(10%)',
+          },
+            '100%': {
+              transform: 'translateX(-125%)',
+          },
+        },
         'slide3-2': {
           '0%': {
             transform: 'translateX(0) skewY(-12deg) translateY(-30px)',
@@ -110,7 +123,9 @@ const config: Config = {
       },
       fontFamily: {
         body: ['Sedgwick Ave Display'],
-        alkatra: ['Alkatra']
+        alkatra: ['Alkatra'],
+        Frederica: ['Fredericka the Great']
+
       },
     },
   },
