@@ -29,9 +29,9 @@ const SmallSlider = ({slides}:props) => {
     return (
     <>
 
-    <div className="w-[400px] h-[360px] relative p-10 px-4 m-auto">    
+    <div className="w-[300px] h-[360px] relative p-10 px-4 m-auto">    
     <div className='absolute
-     w-[400px] top-5 -translate-x-5 text-center m-auto font-alkatra text-2xl text-white'>{slides[currentIndex].info}</div>
+     w-[300px] top-5 -translate-x-5 text-center m-auto font-alkatra text-2xl text-white'>{slides[currentIndex].info}</div>
       <div style={{ backgroundImage: `url(${slides[currentIndex].bg})` }}
         className="h-full w-full bg-center bg-cover duration-500 rounded-2xl"
       >

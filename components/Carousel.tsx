@@ -30,14 +30,14 @@ const Carousel = () => {
       color: "from-blue-300 to-blue-300"
     },
     {
-      bg: "https://vitejs.dev/logo-with-shadow.png",
-      info: "ViteJS",
-      color: "from-blue-200 to-purple-600"
+      bg: "https://pluralsight2.imgix.net/paths/images/nodejs-45adbe594d.png",
+      info: "NodeJS",
+      color: "from-green-200 to-green-600"
     },    
     {
       bg: "https://github.com/dbanaszak1/portfolio/blob/main/images/nextlogo.png?raw=true",
       info: "NextJS",
-      color: "from-white to-white"
+      color: "from-purple-400 to-pink-500"
     },
   ]
 

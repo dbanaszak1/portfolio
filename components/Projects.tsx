@@ -22,7 +22,7 @@ const Projects = ({project}:props) => {
     const container = useRef(null);
     const {scrollYProgress} = useScroll({
       target: container,
-      offset: ['0 3', '1.1 1']
+      offset: ['0 3', '1.3 1']
     })
 
   return (
